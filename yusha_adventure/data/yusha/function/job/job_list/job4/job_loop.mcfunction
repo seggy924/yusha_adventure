@@ -39,5 +39,5 @@ execute as @a[scores={job=4,kill_timer=0, kill_stack=1..}] run effect clear @s m
 execute as @a[scores={job=4,kill_timer=0, kill_stack=1..}] run scoreboard players set @s kill_stack 0
 
 # 5. 처치 카운트 초기화 및 타이머 작동
-scoreboard players set @a[scores={kill_count=1..}] kill_count 0
+scoreboard players set @a[scores={kill_count=1..,job=4}] kill_count 0
 execute as @a[scores={kill_timer=1..}] run scoreboard players remove @s kill_timer 1

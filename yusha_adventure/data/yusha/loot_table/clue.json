@@ -19,7 +19,8 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_data": "{clue_item:1b}"
+                "minecraft:custom_data": "{clue_item:1b,job:1b}",
+                "max_stack_size": 16
               },
               "conditions": []
             }
@@ -29,7 +30,7 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.3
+          "chance": 1
         }
       ]
     }

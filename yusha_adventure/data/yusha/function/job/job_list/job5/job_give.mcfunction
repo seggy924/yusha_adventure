@@ -11,8 +11,9 @@ scoreboard players set @s job 5
 attribute @s minecraft:max_health base set 12
 
 #직업 특수 명령어(개인)
-scoreboard objectives add kill_count totalKillCount
+scoreboard objectives add kill_count2 totalKillCount
 scoreboard objectives add clue dummy "단서 획득 수"
+scoreboard players set @s clue 0
 function yusha:job/job_list/job5/job_item/spyglass
 function yusha:job/job_list/job5/job_item/note
 #...
