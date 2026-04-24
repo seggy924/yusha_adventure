@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "용사의 모험 데이터 팩",
+    "pack_format": 101,
+	  "supported_formats": {
+		"min_inclusive": 100,
+		"max_inclusive": 105
+    }
+  }
+}

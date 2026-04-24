@@ -1,0 +1,1 @@
+item replace entity @s[scores={job=7}] container.0 with bow[unbreakable={},item_name={"bold":true,"color":"dark_red","text":"아처의 활"},custom_data={job:1b},enchantments={"vanishing_curse":1},enchantment_glint_override=false] 1

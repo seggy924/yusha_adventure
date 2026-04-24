@@ -1,0 +1,1 @@
+item replace entity @s container.0 with wooden_sword[unbreakable={},item_name={"bold":true,"color":"gold","text":"용사의 검"},custom_data={job:1b},enchantments={"vanishing_curse":1},enchantment_glint_override=false] 1
