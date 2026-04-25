@@ -9,8 +9,7 @@ execute at @e[tag=cloud_target] run particle poof ~ ~ ~ 0 0 0 0.1 300
 tag @e[tag=cloud_target] remove cloud_target
 
 # 3. 새로운 적 3명 선정 (파도술사 위치 기준 10블록 이내)
-execute as @a[scores={job=9}] at @s run tag @e[limit=3,type=!player,type=!item,type=!experience_orb,type=!villager,type=!creeper,type=!#arrows,type=!#impact_projectiles,distance=..10] add cloud_target
+execute as @a[scores={job=9}] at @s run tag @e[limit=3,type=!player,type=!item,type=!experience_orb,type=!villager,type=!creeper,type=!#arrows,type=!#impact_projectiles,type=!item_display,distance=..10] add cloud_target
 
-execute as @a[scores={job=9}] at @s run tag @e[limit=3,type=!player,type=!item,type=!experience_orb,type=!villager,type=!creeper,type=!#arrows,type=!#impact_projectiles,distance=..10] add cloud_target
 # 4. 마무리 효과 및 타이머 초기화
 scoreboard players set #strike timer 0

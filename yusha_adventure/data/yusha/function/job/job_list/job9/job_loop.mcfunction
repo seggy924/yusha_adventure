@@ -8,10 +8,8 @@ execute as @a[scores={job=9}] if items entity @s armor.chest *[minecraft:custom_
 # 3. 주변 물 연출 및 스킬 실행 
 function yusha:job/job_list/job9/job_skill/wave
 
-execute as @a[scores={job=9}] at @s run tag @e[sort=nearest,type=!player,type=!item,type=!experience_orb,type=!villager,type=!creeper,type=!#arrows,type=!#impact_projectiles,distance=..10] add cloud_target
-
 # 5초(100틱)마다 주기적으로 splash 함수를 실행합니다. 
-execute as @a[scores={job=9}] if items entity @s armor.chest *[minecraft:custom_data~{heart:1b}] if score #strike timer matches 30.. at @s run function yusha:job/job_list/job9/job_skill/splash
+execute as @a[scores={job=9}] if items entity @s armor.chest *[minecraft:custom_data~{heart:1b}] if score #strike timer matches 100.. at @s run function yusha:job/job_list/job9/job_skill/splash
 
 # 4. 삼지창 비행 파티클 연출 (trident:1b 태그 기준) 
 # 날아가는 삼지창 주위에 하늘색 dust 파티클을 생성합니다.
