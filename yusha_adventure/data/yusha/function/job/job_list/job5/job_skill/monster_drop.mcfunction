@@ -1,4 +1,3 @@
-# 탐험가가 죽인 몬스터 드롭 처리 (좀비/스켈레톤 제외: 거미/크리퍼)
 # 드롭 아이템 생성
 loot give @a[scores={job=5}] loot yusha:clue
 

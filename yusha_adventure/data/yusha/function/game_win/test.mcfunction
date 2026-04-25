@@ -28,3 +28,5 @@ scoreboard players operation #clear_sec oracle %= #c60 oracle
 tellraw @a [{"text":"[기록] ","color":"gold"},{"text":"소요 시간: ","color":"white"},{"score":{"name":"#clear_hr","objective":"oracle"},"color":"yellow"},{"text":"시간 ","color":"white"},{"score":{"name":"#clear_min","objective":"oracle"},"color":"yellow"},{"text":"분 ","color":"white"},{"score":{"name":"#clear_sec","objective":"oracle"},"color":"yellow"},{"text":"초","color":"white"}]
 
 execute at @a run summon firework_rocket ~ ~ ~ {LifeTime:5,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"small_ball",has_twinkle:true,colors:[16777215,65527,6225664]}]}}}}
+
+function yusha:timer/timer_stop

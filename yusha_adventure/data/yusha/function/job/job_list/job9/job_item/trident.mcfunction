@@ -1,1 +1,1 @@
-item replace entity @a[scores={job=9}] container.0 with trident[enchantments={"loyalty":1,"vanishing_curse":1},custom_data={job:1b,nami:1b}] 1
+item replace entity @a[scores={job=9}] container.0 with trident[enchantments={"vanishing_curse":1,"loyalty":10,unbreaking:1},custom_data={job:1b,trident:1b}] 1
