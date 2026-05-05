@@ -10,13 +10,20 @@ team join job6
 scoreboard players set @s job 6
 attribute @s minecraft:max_health base set 12
 attribute @s movement_speed base set 0.15
+attribute @s attack_speed base reset
 
 
 #직업 특수 명령어(개인)
-scoreboard objectives add sprint minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add speed dummy
+scoreboard objectives add ride minecraft.custom:minecraft.sprint_one_cm
+scoreboard objectives add x_now dummy
+scoreboard objectives add x_old dummy
+scoreboard objectives add z_now dummy
+scoreboard objectives add z_old dummy
+scoreboard objectives add move_tag dummy
+scoreboard objectives add stay dummy
 scoreboard players set @s speed 0
-scoreboard players set @s sprint 0
+scoreboard players set @s stay 10
 function yusha:job/job_list/job6/job_item/spear
 #...
 

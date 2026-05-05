@@ -10,6 +10,7 @@ team join job7
 scoreboard players set @s job 7
 attribute @s minecraft:max_health base set 12
 attribute @s movement_speed base set 0.13
+attribute @s attack_speed base reset
 
 #직업 특수 명령어(개인)
 scoreboard objectives add air_time dummy

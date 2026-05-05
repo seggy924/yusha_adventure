@@ -1,0 +1,10 @@
+execute if entity @a[scores={job=1}] as @s[scores={job=1}] run function yusha:job/job_list/job1/job_respawn
+execute if entity @a[scores={job=2}] as @s[scores={job=2}] run function yusha:job/job_list/job2/job_respawn
+execute if entity @a[scores={job=3}] as @s[scores={job=3}] run function yusha:job/job_list/job3/job_respawn
+execute if entity @a[scores={job=4}] as @s[scores={job=4}] run function yusha:job/job_list/job4/job_respawn
+execute if entity @a[scores={job=5}] as @s[scores={job=5}] run function yusha:job/job_list/job5/job_respawn
+execute if entity @a[scores={job=6}] as @s[scores={job=6}] run function yusha:job/job_list/job6/job_respawn
+execute if entity @a[scores={job=7}] as @s[scores={job=7}] run function yusha:job/job_list/job7/job_respawn
+execute if entity @a[scores={job=8}] as @s[scores={job=8}] run function yusha:job/job_list/job8/job_respawn
+execute if entity @a[scores={job=9}] as @s[scores={job=9}] run function yusha:job/job_list/job9/job_respawn
+execute if entity @a[scores={job=10}] as @s[scores={job=10}] run function yusha:job/job_list/job10/job_respawn

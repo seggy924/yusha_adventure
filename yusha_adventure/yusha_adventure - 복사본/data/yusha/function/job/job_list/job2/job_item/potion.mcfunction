@@ -1,0 +1,2 @@
+#물약 지급 명령어
+item replace entity @s container.0 with splash_potion[item_model="minecraft:dragon_breath",custom_name={"bold":true,"color":"red","italic":false,"text":"성직자의 성수"},potion_contents={potion:"minecraft:healing"},use_cooldown={seconds:3},custom_data={job:2b},enchantments={"vanishing_curse":1},enchantment_glint_override=false]

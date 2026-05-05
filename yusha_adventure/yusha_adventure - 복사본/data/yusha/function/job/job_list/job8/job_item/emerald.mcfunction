@@ -1,0 +1,1 @@
+item replace entity @s container.1 with emerald[custom_data={job:1b},enchantments={vanishing_curse:1},enchantment_glint_override=false,custom_name={"text":"상인의 에메랄드","color":"green",bold:true,italic:false}] 5

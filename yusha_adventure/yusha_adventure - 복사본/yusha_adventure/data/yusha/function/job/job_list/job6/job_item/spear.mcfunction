@@ -1,0 +1,1 @@
+item replace entity @s[scores={job=6}] container.0 with wooden_spear[unbreakable={},item_name={"bold":true,"color":"dark_red","text":"랜서의 창"},custom_data={job:1b,spear:1b},enchantments={"vanishing_curse":1},enchantment_glint_override=false] 1
