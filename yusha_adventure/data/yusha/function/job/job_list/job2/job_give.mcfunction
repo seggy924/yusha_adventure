@@ -9,6 +9,7 @@ team modify job2 suffix [" ",{"text":"[","color":"white"},{"text":"성직자","c
 team join job2
 scoreboard players set @s job 2
 attribute @s minecraft:max_health base set 12
+attribute @s movement_speed base set 0.13
 
 #직업 특수 명령어(개인)
 #...

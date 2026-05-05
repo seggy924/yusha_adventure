@@ -4,6 +4,7 @@ function yusha:timer/timer_stop
 schedule clear yusha:game_start/wait_notice
 advancement revoke seggy_rice_ only yusha:win
 gamerule immediate_respawn true
+gamerule fall_damage false
 kill @e[tag=flag]
 execute at @a run playsound minecraft:entity.player.levelup master @a ~ ~ ~ 1 1
 # 용사 죽음 스코어보드

@@ -8,13 +8,15 @@ team modify job1 suffix [" ",{"text":"[","color":"white"},{"text":"용사","colo
 team join job1
 scoreboard players set @s job 1
 attribute @s minecraft:max_health base set 30
+attribute @s movement_speed base set 0.13
 
 #직업 특수 명령어(개인)
+kill @e[tag=job1_click]
 scoreboard objectives add flag dummy
 scoreboard players set @s flag 2
+scoreboard objectives add lockon dummy
 advancement revoke @s only yusha:flag_on
 advancement revoke @s only yusha:flag_off
-function yusha:job/job_list/job1/job_item/sword
 
 #직업 선택 멘트 (공유)
 tellraw @a ["",{"selector":"@s"},{"text":" "},{"text":"에게 신의 계시가 내려졌습니다!","color":"gold"}]

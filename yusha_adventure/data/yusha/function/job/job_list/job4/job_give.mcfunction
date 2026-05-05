@@ -9,6 +9,8 @@ team modify job4 suffix [" ",{"text":"[","color":"white"},{"text":"광전사","c
 team join job4
 scoreboard players set @s job 4
 attribute @s minecraft:max_health base set 10
+attribute @s movement_speed base set 0.13
+attribute @s attack_speed base set 8
 
 #직업 특수 명령어(개인)
 scoreboard objectives add kill_timer dummy

@@ -9,6 +9,7 @@ team modify job8 suffix [" ",{"text":"[","color":"white"},{"text":"상인","colo
 team join job8
 scoreboard players set @s job 8
 attribute @s minecraft:max_health base set 16
+attribute @s movement_speed base set 0.13
 
 #직업 특수 명령어(개인)
 function yusha:job/job_list/job8/job_item/emerald

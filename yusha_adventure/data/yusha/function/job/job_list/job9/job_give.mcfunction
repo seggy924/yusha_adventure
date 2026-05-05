@@ -9,6 +9,7 @@ team modify job9 suffix [" ",{"text":"[","color":"white"},{"text":"파도술사"
 team join job9
 scoreboard players set @s job 9
 attribute @s minecraft:max_health base set 12
+attribute @s movement_speed base set 0.13
 
 #직업 특수 명령어(개인)
 function yusha:job/job_list/job9/job_item/trident

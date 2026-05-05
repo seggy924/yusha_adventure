@@ -8,6 +8,10 @@ team modify job0 suffix [" ",{"text":"[","color":"white"},{"text":"무직","colo
 team join job0
 scoreboard players set @s job 0
 attribute @s minecraft:max_health base reset
+attribute @s minecraft:movement_speed base reset
+attribute @s minecraft:attack_speed base reset
+attribute @s attack_damage base reset
+attribute @s gravity base reset
 #직업 특수 명령어(개인)
 #...
 

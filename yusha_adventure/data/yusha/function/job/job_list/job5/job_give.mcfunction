@@ -9,6 +9,7 @@ team modify job5 suffix [" ",{"text":"[","color":"white"},{"text":"탐험가","c
 team join job5
 scoreboard players set @s job 5
 attribute @s minecraft:max_health base set 12
+attribute @s movement_speed base set 0.13
 
 #직업 특수 명령어(개인)
 scoreboard objectives add kill_count2 totalKillCount

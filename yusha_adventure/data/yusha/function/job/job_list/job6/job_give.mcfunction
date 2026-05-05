@@ -9,8 +9,14 @@ team modify job6 suffix [" ",{"text":"[","color":"white"},{"text":"랜서","colo
 team join job6
 scoreboard players set @s job 6
 attribute @s minecraft:max_health base set 12
+attribute @s movement_speed base set 0.15
+
 
 #직업 특수 명령어(개인)
+scoreboard objectives add sprint minecraft.custom:minecraft.sprint_one_cm
+scoreboard objectives add speed dummy
+scoreboard players set @s speed 0
+scoreboard players set @s sprint 0
 function yusha:job/job_list/job6/job_item/spear
 #...
 

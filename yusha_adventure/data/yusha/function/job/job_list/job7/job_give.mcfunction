@@ -9,6 +9,7 @@ team modify job7 suffix [" ",{"text":"[","color":"white"},{"text":"아처","colo
 team join job7
 scoreboard players set @s job 7
 attribute @s minecraft:max_health base set 12
+attribute @s movement_speed base set 0.13
 
 #직업 특수 명령어(개인)
 scoreboard objectives add air_time dummy
