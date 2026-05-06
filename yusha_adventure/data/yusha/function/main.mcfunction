@@ -5,11 +5,15 @@ execute as @a[scores={respawn_timer=1..}] run function yusha:respawn
 execute if entity @a[scores={job=1..}] run function yusha:timer/timer_loop
 
 function yusha:job/job_loop
+#직업 아이템 버리기 금지
+function yusha:job/job_item_save
 
-execute as @e[type=item, nbt={Item:{components:{"minecraft:custom_data":{job:1b}}}}] run data merge entity @s {PickupDelay:0s}
-execute as @e[type=item, nbt={Item:{components:{"minecraft:custom_data":{job:1b}}}}] at @s run tp @s @p
-kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{job:2b}}}}]
-execute as @a if items entity @s player.cursor *[custom_data~{job:2b}] run item replace entity @s player.cursor with minecraft:air
-execute as @a if items entity @s weapon.offhand *[custom_data~{job:2b}] run item replace entity @s weapon.offhand with minecraft:air
 #재접속시
 execute as @a[scores={join_game=1..}] run function yusha:join_game
+
+#지옥 보호
+# 지옥에 플레이어가 한 명이라도 있는지 확인
+execute if entity @a[nbt={Dimension:"minecraft:the_nether"}] run gamerule keep_inventory true
+
+# 모두가 오버월드나 엔드에 있다면 끄기
+execute unless entity @a[nbt={Dimension:"minecraft:the_nether"}] run gamerule keep_inventory false
