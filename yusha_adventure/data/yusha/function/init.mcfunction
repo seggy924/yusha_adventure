@@ -4,7 +4,7 @@ gamerule fall_damage false
 gamerule pvp false
 function yusha:timer/timer_stop
 schedule clear yusha:game_start/wait_notice
-advancement revoke seggy_rice_ only yusha:win
+advancement revoke @a everything
 gamerule immediate_respawn true
 gamerule fall_damage false
 kill @e[tag=flag]

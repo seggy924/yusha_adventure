@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "writable_book"
+    },
+    "title": "모험의 서",
+    "description": "신탁의 부름.",
+    "background": "minecraft:block/blackstone",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "first": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "first"
+    ]
+  ]
+}

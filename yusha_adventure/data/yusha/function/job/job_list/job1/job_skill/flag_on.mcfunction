@@ -1,5 +1,5 @@
 
-advancement revoke @a[scores={job=1}] only yusha:flag_off
+advancement revoke @a[scores={job=1}] only yusha:job_skill/flag_off
 
 execute at @a run playsound minecraft:item.trident.hit_ground player @a ~ ~ ~ 1 0
 execute at @a run playsound minecraft:item.trident.return player @a ~ ~ ~ 1 0.5

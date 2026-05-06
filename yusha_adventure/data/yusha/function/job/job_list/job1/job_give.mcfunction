@@ -14,8 +14,9 @@ scoreboard objectives add flag dummy
 scoreboard objectives add hit minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add combo dummy
 scoreboard players set @s flag 2
-advancement revoke @s only yusha:flag_on
-advancement revoke @s only yusha:flag_off
+advancement revoke @s only yusha:job_skill/flag_on
+advancement revoke @s only yusha:job_skill/flag_off
+advancement grant @s only yusha:main/yusha
 
 #직업 선택 멘트
 tellraw @a ["",{"selector":"@s"},{"text":" "},{"text":"에게 신의 계시가 내려졌습니다!","color":"gold"}]
