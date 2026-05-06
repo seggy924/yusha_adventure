@@ -1,2 +1,1 @@
 function yusha:job/job_list/job9/job_item/trident
-function yusha:job/job_list/job9/job_item/heart

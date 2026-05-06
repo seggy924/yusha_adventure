@@ -11,3 +11,5 @@ execute as @e[type=item, nbt={Item:{components:{"minecraft:custom_data":{job:1b}
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{job:2b}}}}]
 execute as @a if items entity @s player.cursor *[custom_data~{job:2b}] run item replace entity @s player.cursor with minecraft:air
 execute as @a if items entity @s weapon.offhand *[custom_data~{job:2b}] run item replace entity @s weapon.offhand with minecraft:air
+#재접속시
+execute as @a[scores={join_game=1..}] run function yusha:join_game

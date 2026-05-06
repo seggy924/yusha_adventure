@@ -1,0 +1,11 @@
+execute as @s[team=job0] run function yusha:job/job_list/job0/job_give
+execute as @s[team=job1] run function yusha:job/job_list/job1/job_give
+execute as @s[team=job2] run function yusha:job/job_list/job2/job_give
+execute as @s[team=job3] run function yusha:job/job_list/job3/job_give
+execute as @s[team=job4] run function yusha:job/job_list/job4/job_give
+execute as @s[team=job5] run function yusha:job/job_list/job5/job_give
+execute as @s[team=job6] run function yusha:job/job_list/job6/job_give
+execute as @s[team=job7] run function yusha:job/job_list/job7/job_give
+execute as @s[team=job8] run function yusha:job/job_list/job8/job_give
+execute as @s[team=job9] run function yusha:job/job_list/job9/job_give
+execute as @s[team=job10] run function yusha:job/job_list/job10/job_give

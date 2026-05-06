@@ -14,7 +14,6 @@ attribute @s attack_speed base reset
 
 #직업 특수 명령어(개인)
 function yusha:job/job_list/job9/job_item/trident
-function yusha:job/job_list/job9/job_item/heart
 #...
 
 #직업 선택 멘트 (공유)
