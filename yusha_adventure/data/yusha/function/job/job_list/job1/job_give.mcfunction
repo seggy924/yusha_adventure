@@ -1,5 +1,5 @@
 #직업 초기화
-function yusha:job/job_list/job1/job_give
+function yusha:job/job_list/job0/job_give
 #직업 설정
 team add job1 '용사'
 team modify job1 suffix [" ",{"text":"[","color":"white"},{"text":"용사","color":"gold"},{"text":"]","color":"white"}]

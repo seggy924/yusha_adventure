@@ -6,10 +6,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:map",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "eye_of_ender_located",
+              "destination": "minecraft:eye_of_ender_located",
               "decoration": "red_x",
               "zoom": 1,
               "search_radius": 100,

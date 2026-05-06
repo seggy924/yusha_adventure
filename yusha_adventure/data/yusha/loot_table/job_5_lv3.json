@@ -6,10 +6,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:map",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "eye_of_ender_located",
+              "destination": "ruined_portal",
               "decoration": "red_x",
               "zoom": 1,
               "search_radius": 100,
@@ -19,7 +20,7 @@
               "function": "minecraft:set_name",
               "target": "item_name",
               "name": {
-                "text": "엔더 유적 지도",
+                "text": "무너진 차원문 지도",
                 "color": "gold",
                 "italic": false
               }
