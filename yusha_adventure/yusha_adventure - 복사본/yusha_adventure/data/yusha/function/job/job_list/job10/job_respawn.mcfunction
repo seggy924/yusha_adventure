@@ -1,1 +1,0 @@
-function yusha:job/job_list/job10/job_item/pickaxe

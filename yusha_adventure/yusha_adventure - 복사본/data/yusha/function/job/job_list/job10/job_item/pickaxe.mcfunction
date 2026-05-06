@@ -1,1 +1,0 @@
-item replace entity @s container.0 with iron_pickaxe[enchantments={"vanishing_curse":1},custom_data={job:1b}] 1

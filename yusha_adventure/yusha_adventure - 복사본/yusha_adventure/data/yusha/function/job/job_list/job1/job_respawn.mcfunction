@@ -1,1 +1,0 @@
-function yusha:job/job_list/job1/job_item/sword

@@ -12,4 +12,4 @@ execute as @e[type=arrow, nbt={item:{components:{"minecraft:custom_data":{archer
 execute as @e[type=arrow, nbt={inGround:1b, item:{components:{"minecraft:custom_data":{archer_arrow:1b}}}}] run kill @s
 
 # 4. [시각 효과] 아처의 화살에만 전용 파티클 출력
-execute at @e[type=arrow, nbt={inGround:0b, item:{components:{"minecraft:custom_data":{archer_arrow:1b}}}}] run particle minecraft:electric_spark ~ ~ ~ 1 1 1 0.3 10
+execute at @e[type=arrow, nbt={inGround:0b, item:{components:{"minecraft:custom_data":{archer_arrow:1b}}}}] run particle minecraft:electric_spark ~ ~ ~ 0.5 0.5 0.5 0.3 10

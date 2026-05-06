@@ -1,1 +1,0 @@
-item replace entity @a[scores={job=9}] armor.chest with heart_of_the_sea[enchantments={"vanishing_curse":1},custom_data={job:1b,heart:1b},equippable={slot:"chest",equip_sound:"block.conduit.ambient",equip_on_interact:true,can_be_sheared:false}] 1

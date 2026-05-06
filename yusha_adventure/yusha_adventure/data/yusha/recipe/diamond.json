@@ -1,6 +1,0 @@
-{
-  "type": "minecraft:smithing_transform",
-  "base": "minecraft:golden_axe",
-  "addition": "diamond",
-  "result": "minecraft:diamond_axe"
-}

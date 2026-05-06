@@ -1,1 +1,0 @@
-function yusha:job/job_list/job6/job_item/spear

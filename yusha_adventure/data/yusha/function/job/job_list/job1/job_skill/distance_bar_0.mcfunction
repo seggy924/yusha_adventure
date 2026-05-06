@@ -21,4 +21,5 @@ title @a[team=!job8,scores={job=2..},distance=22.5..25.5] actionbar [{"bold":tru
 title @a[team=!job8,scores={job=2..},distance=25.5..30] actionbar [{"bold":true,"color":"red","text":"■"},{"bold":true,"color":"dark_gray","text":"■■■■■■■■■"}]
 
 execute at @a[scores={job=1}] run tag @a[distance=30..,scores={job=2..},team=!job8] add out_of_range
+execute at @a[scores={job=1}] run kill @e[distance=30..,tag=lancer_horse,type=zombie_horse]
 execute at @a[scores={job=1}] run tp @a[distance=30..,scores={job=2..},team=!job8] ~ ~ ~

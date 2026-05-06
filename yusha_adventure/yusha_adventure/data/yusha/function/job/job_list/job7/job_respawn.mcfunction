@@ -1,1 +1,0 @@
-function yusha:job/job_list/job7/job_item/bow

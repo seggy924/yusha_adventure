@@ -1,9 +1,0 @@
-execute as @a[scores={select_job=2}] run execute as @r[scores={job=0}] run function yusha:job/job_list/job2/job_give
-execute as @a[scores={select_job=3}] run execute as @r[scores={job=0}] run function yusha:job/job_list/job3/job_give
-execute as @a[scores={select_job=4}] run execute as @r[scores={job=0}] run function yusha:job/job_list/job4/job_give
-execute as @a[scores={select_job=5}] run execute as @r[scores={job=0}] run function yusha:job/job_list/job5/job_give
-execute as @a[scores={select_job=6}] run execute as @r[scores={job=0}] run function yusha:job/job_list/job6/job_give
-execute as @a[scores={select_job=7}] run execute as @r[scores={job=0}] run function yusha:job/job_list/job7/job_give
-execute as @a[scores={select_job=8}] run execute as @r[scores={job=0}] run function yusha:job/job_list/job8/job_give
-execute as @a[scores={select_job=9}] run execute as @r[scores={job=0}] run function yusha:job/job_list/job9/job_give
-execute as @a[scores={select_job=10}] run execute as @r[scores={job=0}] run function yusha:job/job_list/job10/job_give

@@ -9,7 +9,7 @@ team modify job6 suffix [" ",{"text":"[","color":"white"},{"text":"랜서","colo
 team join job6
 scoreboard players set @s job 6
 attribute @s minecraft:max_health base set 12
-attribute @s movement_speed base set 0.15
+attribute @s movement_speed base set 0.2
 attribute @s attack_speed base reset
 
 

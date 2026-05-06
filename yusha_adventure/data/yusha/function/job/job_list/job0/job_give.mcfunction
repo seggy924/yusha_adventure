@@ -13,6 +13,8 @@ attribute @s minecraft:attack_speed base reset
 attribute @s attack_damage base reset
 attribute @s gravity base reset
 #직업 특수 명령어(개인)
+scoreboard objectives add combo dummy
+scoreboard objectives add hit minecraft.custom:minecraft.damage_dealt
 #...
 
 #직업 선택 멘트 (공유)

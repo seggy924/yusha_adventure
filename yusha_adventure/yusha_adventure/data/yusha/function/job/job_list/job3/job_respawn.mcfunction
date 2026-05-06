@@ -1,1 +1,0 @@
-function yusha:job/job_list/job3/job_item/shield
