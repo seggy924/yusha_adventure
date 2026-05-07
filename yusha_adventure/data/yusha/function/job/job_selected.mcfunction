@@ -13,3 +13,4 @@ execute if score #total count matches 1.. run function yusha:job/job_list
 # 다 끝났다면 마무리
 execute if score #total count matches 0 run tellraw @a "(이)였어요."
 execute if score #total count matches 0 run schedule function yusha:game_start/line6 40t
+execute if score #total count matches 0 run advancement grant @a only yusha:main/friend

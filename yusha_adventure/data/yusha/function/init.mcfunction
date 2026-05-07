@@ -4,7 +4,9 @@ gamerule fall_damage false
 gamerule pvp false
 function yusha:timer/timer_stop
 schedule clear yusha:game_start/wait_notice
+#모든 도전 과제 초기화
 advancement revoke @a everything
+advancement grant @a only yusha:main/root
 gamerule immediate_respawn true
 gamerule fall_damage false
 kill @e[tag=flag]
@@ -36,7 +38,7 @@ scoreboard objectives add select_job trigger
 
 scoreboard objectives add timer dummy
 #모두를 무직으로 설정
-execute as @a run function yusha:job/job_list/job0/job_give
+#execute as @a run function yusha:job/job_list/job0/job_give
 #용사 깃발 초기화
 function yusha:job/job_item_clear
 

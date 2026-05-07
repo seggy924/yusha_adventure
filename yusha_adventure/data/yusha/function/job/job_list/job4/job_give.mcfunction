@@ -1,7 +1,5 @@
 #직업 초기화
-team leave @s
-function yusha:job/job_item_clear
-scoreboard players set @s select_job 0
+function yusha:job/job_list/job0/job_give
 
 #직업 설정
 team add job4 '광전사'

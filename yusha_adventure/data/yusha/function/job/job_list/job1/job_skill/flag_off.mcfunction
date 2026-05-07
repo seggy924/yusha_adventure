@@ -1,5 +1,5 @@
 execute at @e[tag=flag] run forceload remove ~ ~
-advancement grant @a[scores={job=1}] only yusha:main/teleport
+advancement revoke @a[scores={job=1}] only yusha:job_skill/flag_on
 
 execute at @a run playsound minecraft:entity.item.pickup ambient @a ~ ~ ~ 1 0
 execute at @a run playsound minecraft:block.trial_spawner.detect_player ambient @a ~ ~ ~ 1 0

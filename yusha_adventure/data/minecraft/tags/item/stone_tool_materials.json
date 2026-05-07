@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "end_stone",
+    "tuff",
+    "calcite",
+    "andesite",
+    "diorite",
+    "granite"
+  ]
+}

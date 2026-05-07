@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:stonecutting",
+  "show_notification": true,
+  "ingredient": "#minecraft:stone_crafting_materials",
+  "result": "minecraft:cobblestone"
+}

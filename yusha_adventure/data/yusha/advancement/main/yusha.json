@@ -4,7 +4,7 @@
       "id": "minecraft:nether_star"
     },
     "title": "용사 등장!",
-    "description": "신탁을 받으세요!",
+    "description": "\"나, 강림\"",
     "background": "minecraft:block/blackstone",
     "show_toast": true,
     "announce_to_chat": true,

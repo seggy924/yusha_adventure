@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:campfire"
+    },
+    "title": "만능 도구",
+    "description": "모닥불을 설치하세요",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "yusha:main/friend",
+  "criteria": {
+    "block_entities": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "minecraft:campfire"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+  }
+}

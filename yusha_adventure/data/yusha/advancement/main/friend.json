@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "bow"
+    },
+    "title": "가랏 몬스터볼!",
+    "description": "신난다! 야생의 플레이어가 용사의 동료(노예)가 되었다!",
+    "background": "minecraft:block/blackstone",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "yusha:main/yusha",
+  "criteria": {
+    "first": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "first"
+    ]
+  ]
+}

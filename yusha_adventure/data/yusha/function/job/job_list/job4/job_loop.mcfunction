@@ -3,7 +3,7 @@ execute as @a[scores={job=4}] store result score @s blood_count run clear @s min
 
 # 1. 스택 상승 및 타이머 리셋
 execute as @a[scores={job=4,kill_count=1.., kill_stack=..4}] run scoreboard players add @s kill_stack 1
-execute as @a[scores={job=4,kill_count=1..}] run scoreboard players set @s kill_timer 200
+execute as @a[scores={job=4,kill_count=1..}] run scoreboard players set @s kill_timer 400
 
 # 2. 효과음 발생
 # (5스택 달성 시: 가장 파괴적인 소리)

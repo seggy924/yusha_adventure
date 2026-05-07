@@ -16,7 +16,7 @@ scoreboard objectives add combo dummy
 scoreboard players set @s flag 2
 advancement revoke @s only yusha:job_skill/flag_on
 advancement revoke @s only yusha:job_skill/flag_off
-advancement grant @s only yusha:main/yusha
+advancement grant @a only yusha:main/yusha
 
 #직업 선택 멘트
 tellraw @a ["",{"selector":"@s"},{"text":" "},{"text":"에게 신의 계시가 내려졌습니다!","color":"gold"}]
