@@ -17,3 +17,5 @@ execute if entity @a[nbt={Dimension:"minecraft:the_nether"}] run gamerule keep_i
 
 # 모두가 오버월드나 엔드에 있다면 끄기
 execute unless entity @a[nbt={Dimension:"minecraft:the_nether"}] run gamerule keep_inventory false
+
+function yusha:campfire

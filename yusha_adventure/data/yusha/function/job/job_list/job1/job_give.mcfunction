@@ -7,6 +7,8 @@ team join job1
 scoreboard players set @s job 1
 attribute @s minecraft:max_health base set 30
 attribute @s movement_speed base set 0.15
+attribute @s luck base set 500
+attribute @s attack_damage base set 5
 
 #직업 특수 명령어
 kill @e[tag=job1_click]

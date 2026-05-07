@@ -17,6 +17,8 @@ scoreboard objectives add deaths deathCount
 scoreboard objectives add generation deathCount '번째 환생'
 # 재접속 스코어 보드
 scoreboard objectives add join_game minecraft.custom:minecraft.leave_game
+#모닥불 타이머
+scoreboard objectives add campfire_timer dummy
 # 직업 스코어보드 (기본값은 0임)
 scoreboard objectives add job dummy '직업'
 # 환생 횟수를 출력
@@ -41,4 +43,3 @@ scoreboard objectives add timer dummy
 #execute as @a run function yusha:job/job_list/job0/job_give
 #용사 깃발 초기화
 function yusha:job/job_item_clear
-

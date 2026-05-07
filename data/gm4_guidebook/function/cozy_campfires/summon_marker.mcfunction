@@ -1,0 +1,1 @@
+execute if score gm4_cozy_campfires load.status matches 1.. run summon marker ~ 739.663219176003 ~ {CustomName:"gm4_cozy_campfires",Tags:["gm4_guide","gm4_guide_cozy_campfires"],data:{type:"module",id:"cozy_campfires",trigger:61,module_name:"Cozy Campfires",toc_line:"\u25cf Cozy Campfires",line_count:1}}
