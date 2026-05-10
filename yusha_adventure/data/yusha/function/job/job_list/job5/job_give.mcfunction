@@ -8,6 +8,7 @@ team join job5
 scoreboard players set @s job 5
 attribute @s minecraft:max_health base set 12
 attribute @s movement_speed base set 0.13
+attribute @s block_break_speed base set 4
 
 #직업 특수 명령어
 scoreboard objectives add kill_count2 totalKillCount

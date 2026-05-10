@@ -2,7 +2,7 @@ tellraw @a ["",{"text":"[ ","color":"gray"},{"text":"용사의 모험","color":"
 scoreboard objectives remove generation
 gamerule fall_damage false
 gamerule pvp false
-function yusha:timer/timer_stop
+#function yusha:timer/timer_stop
 schedule clear yusha:game_start/wait_notice
 #모든 도전 과제 초기화
 advancement revoke @a everything

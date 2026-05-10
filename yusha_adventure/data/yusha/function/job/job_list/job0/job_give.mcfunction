@@ -14,8 +14,9 @@ attribute @s minecraft:movement_speed base reset
 attribute @s minecraft:attack_speed base reset
 attribute @s attack_damage base reset
 attribute @s gravity base reset
-attribute @s luck base set 500
-attribute @s block_break_speed base set 3
+attribute @s luck base reset
+attribute @s block_break_speed base reset
+attribute @s submerged_mining_speed base reset
 tellraw @a {"color":"gray","text":"무직된!"}
 #...
 

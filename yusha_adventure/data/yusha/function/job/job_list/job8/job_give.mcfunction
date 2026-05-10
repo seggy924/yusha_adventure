@@ -8,6 +8,7 @@ team join job8
 scoreboard players set @s job 8
 attribute @s minecraft:max_health base set 16
 attribute @s movement_speed base set 0.13
+attribute @s block_break_speed base set 4
 
 #직업 특수 명령어
 function yusha:job/job_list/job8/job_item/emerald

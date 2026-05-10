@@ -26,5 +26,6 @@ title @a[team=!job8,distance=57..60] actionbar [{"bold":true,"color":"red","text
 
 tag @a[distance=60..,scores={job=1..}] add out_of_range
 kill @e[distance=60..,tag=lancer_horse,type=zombie_horse]
+execute at @e[type=item_display,tag=flag] run data merge entity @e[nbt={item:{components:{"minecraft:custom_data":{trident:1b}}}},limit=1,distance=60..] {inGround:1b}
 
 execute at @e[tag=flag,limit=1] run tp @a[distance=60..,scores={job=1..},team=!job8] ~ ~ ~

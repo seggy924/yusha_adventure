@@ -8,6 +8,7 @@ team join job4
 scoreboard players set @s job 4
 attribute @s minecraft:max_health base set 10
 attribute @s movement_speed base set 0.13
+attribute @s block_break_speed base set 4
 
 #직업 특수 명령어
 scoreboard objectives add kill_timer dummy

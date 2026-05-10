@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:nautilus_shell"
+    },
+    "title": "파도 타기 켜짐",
+    "description": "",
+    "background": "minecraft:block/moss_block",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "wave": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "team": "job9"
+        },
+        "item": {
+          "items": "minecraft:dried_kelp",
+          "predicates": {
+            "minecraft:custom_data": "{wave:0b}"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "wave"
+    ]
+  ],
+  "rewards": {
+    "function": "yusha:job/job_list/job9/job_skill/wave_on"
+  }
+}
