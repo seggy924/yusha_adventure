@@ -11,11 +11,14 @@ attribute @s movement_speed base set 0.13
 attribute @s block_break_speed base set 4
 attribute @s block_break_speed base set 4
 attribute @s submerged_mining_speed base set 2
+attribute @s water_movement_efficiency base set 2
 
 #직업 특수 명령어
 function yusha:job/job_list/job9/job_item/trident
 scoreboard objectives add wave dummy
 scoreboard players set @s wave 1
+scoreboard objectives add trident_hit dummy
+scoreboard objectives add is_processed dummy
 #...
 
 #직업 선택 멘트

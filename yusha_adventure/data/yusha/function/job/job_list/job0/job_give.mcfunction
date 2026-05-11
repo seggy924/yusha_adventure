@@ -17,6 +17,7 @@ attribute @s gravity base reset
 attribute @s luck base reset
 attribute @s block_break_speed base reset
 attribute @s submerged_mining_speed base reset
+attribute @s water_movement_efficiency base reset
 tellraw @a {"color":"gray","text":"무직된!"}
 #...
 

@@ -15,8 +15,6 @@ attribute @s block_break_speed base set 4
 #직업 특수 명령어
 kill @e[tag=job1_click]
 scoreboard objectives add flag dummy
-scoreboard objectives add hit minecraft.custom:minecraft.damage_dealt
-scoreboard objectives add combo dummy
 scoreboard players set @s flag 2
 advancement revoke @s only yusha:job_skill/flag_on
 advancement revoke @s only yusha:job_skill/flag_off

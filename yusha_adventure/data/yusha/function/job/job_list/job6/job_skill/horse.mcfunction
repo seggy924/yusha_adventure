@@ -34,25 +34,7 @@ execute as @a[scores={job=6,speed=13..50}] at @s run particle copper_fire_flame 
 execute as @a[scores={job=6,speed=50..}] at @s run particle copper_fire_flame ~ ~0.3 ~ 0.5 0.05 0.5 1 3
 execute as @a[scores={job=6,speed=650..}] at @s run particle sonic_boom ~ ~0.1 ~ 0.05 0.05 0.05 0.01 1
 
-# 말: 사운드
-execute as @a[scores={job=6,speed=10}] at @s run playsound minecraft:item.elytra.flying master @s ~ ~ ~ 0.1 0.5
-execute as @a[scores={job=6,speed=50}] at @s run playsound minecraft:item.elytra.flying master @s ~ ~ ~ 0.1 0.6
-execute as @a[scores={job=6,speed=100}] at @s run playsound minecraft:item.elytra.flying master @s ~ ~ ~ 0.1 0.7
-execute as @a[scores={job=6,speed=150}] at @s run playsound minecraft:item.elytra.flying master @s ~ ~ ~ 0.1 0.8
-execute as @a[scores={job=6,speed=200}] at @s run playsound minecraft:item.elytra.flying master @s ~ ~ ~ 0.1 0.9
-execute as @a[scores={job=6,speed=250}] at @s run playsound minecraft:item.elytra.flying master @s ~ ~ ~ 0.1 1.0
-execute as @a[scores={job=6,speed=300}] at @s run playsound minecraft:item.elytra.flying master @s ~ ~ ~ 0.1 1.1
-execute as @a[scores={job=6,speed=350}] at @s run playsound minecraft:item.elytra.flying master @s ~ ~ ~ 0.1 1.2
-execute as @a[scores={job=6,speed=400}] at @s run playsound minecraft:item.elytra.flying master @s ~ ~ ~ 0.1 1.3
-execute as @a[scores={job=6,speed=450}] at @s run playsound minecraft:item.elytra.flying master @s ~ ~ ~ 0.1 1.4
-execute as @a[scores={job=6,speed=500}] at @s run playsound minecraft:item.elytra.flying master @s ~ ~ ~ 0.1 1.5
-execute as @a[scores={job=6,speed=550}] at @s run playsound minecraft:item.elytra.flying master @s ~ ~ ~ 0.1 1.6
-execute as @a[scores={job=6,speed=600}] at @s run playsound minecraft:item.elytra.flying master @s ~ ~ ~ 0.1 1.7
-execute as @a[scores={job=6,speed=650}] at @s run playsound minecraft:item.elytra.flying master @s ~ ~ ~ 0.1 1.8
-execute as @a[scores={job=6,speed=700}] at @s run playsound minecraft:item.elytra.flying master @s ~ ~ ~ 0.1 1.9
-execute as @a[scores={job=6,speed=750}] at @s run playsound minecraft:item.elytra.flying master @s ~ ~ ~ 0.1 2.0
-execute as @a[scores={job=6,speed=800}] at @s run playsound minecraft:item.elytra.flying master @s ~ ~ ~ 0.1 2.0
-
+function yusha:job/job_list/job6/job_skill/horse_sound
 
 # 말: 사운드 초기화
 execute as @a[scores={job=6,speed=0}] run stopsound @s master minecraft:item.elytra.flying
@@ -61,33 +43,33 @@ execute as @a[scores={job=6,speed=0}] run stopsound @s master minecraft:item.ely
 execute as @a[scores={job=6,speed=1..13}] run attribute @e[type=zombie_horse,tag=lancer_horse,limit=1,sort=nearest] movement_speed base set 0.2
 execute as @a[scores={job=6,speed=1..13}] run attribute @s attack_damage base set 0.15
 #구간2
-execute as @a[scores={job=6,speed=14..25}] run attribute @e[type=zombie_horse,tag=lancer_horse,limit=1,sort=nearest] movement_speed base set 0.25
+execute as @a[scores={job=6,speed=14..25}] run attribute @e[type=zombie_horse,tag=lancer_horse,limit=1,sort=nearest] movement_speed base set 0.4
 execute as @a[scores={job=6,speed=14..25}] run attribute @s attack_damage base set 0.65
 #구간3
-execute as @a[scores={job=6,speed=26..50}] run attribute @e[type=zombie_horse,tag=lancer_horse,limit=1,sort=nearest] movement_speed base set 0.3
+execute as @a[scores={job=6,speed=26..50}] run attribute @e[type=zombie_horse,tag=lancer_horse,limit=1,sort=nearest] movement_speed base set 0.8
 execute as @a[scores={job=6,speed=26..50}] run attribute @s attack_damage base set 1.85
 #구간4
-execute as @a[scores={job=6,speed=51..100}] run attribute @e[type=zombie_horse,tag=lancer_horse,limit=1,sort=nearest] movement_speed base set 0.35
+execute as @a[scores={job=6,speed=51..100}] run attribute @e[type=zombie_horse,tag=lancer_horse,limit=1,sort=nearest] movement_speed base set 1.2
 execute as @a[scores={job=6,speed=51..100}] run attribute @s attack_damage base set 3
 #구간5
-execute as @a[scores={job=6,speed=101..200}] run attribute @e[type=zombie_horse,tag=lancer_horse,limit=1,sort=nearest] movement_speed base set 0.4
+execute as @a[scores={job=6,speed=101..200}] run attribute @e[type=zombie_horse,tag=lancer_horse,limit=1,sort=nearest] movement_speed base set 1.4
 execute as @a[scores={job=6,speed=101..200}] run attribute @s attack_damage base set 5
 #구간6
-execute as @a[scores={job=6,speed=201..350}] run attribute @e[type=zombie_horse,tag=lancer_horse,limit=1,sort=nearest] movement_speed base set 0.6
+execute as @a[scores={job=6,speed=201..350}] run attribute @e[type=zombie_horse,tag=lancer_horse,limit=1,sort=nearest] movement_speed base set 1.6
 execute as @a[scores={job=6,speed=201..350}] run attribute @s attack_damage base set 10
 #구간7
-execute as @a[scores={job=6,speed=351..500}] run attribute @e[type=zombie_horse,tag=lancer_horse,limit=1,sort=nearest] movement_speed base set 0.9
+execute as @a[scores={job=6,speed=351..500}] run attribute @e[type=zombie_horse,tag=lancer_horse,limit=1,sort=nearest] movement_speed base set 1.8
 execute as @a[scores={job=6,speed=351..500}] run attribute @s attack_damage base set 25
 #구간8
-execute as @a[scores={job=6,speed=501..650}] run attribute @e[type=zombie_horse,tag=lancer_horse,limit=1,sort=nearest] movement_speed base set 1.3
+execute as @a[scores={job=6,speed=501..650}] run attribute @e[type=zombie_horse,tag=lancer_horse,limit=1,sort=nearest] movement_speed base set 2.0
 execute as @a[scores={job=6,speed=501..650}] run attribute @s attack_damage base set 50
 #구간9
-execute as @a[scores={job=6,speed=651..800}] run attribute @e[type=zombie_horse,tag=lancer_horse,limit=1,sort=nearest] movement_speed base set 1.8
+execute as @a[scores={job=6,speed=651..800}] run attribute @e[type=zombie_horse,tag=lancer_horse,limit=1,sort=nearest] movement_speed base set 2.2
 execute as @a[scores={job=6,speed=651..800}] run attribute @s attack_damage base set 100
 execute as @a[scores={job=6,speed=800..}] run scoreboard players set @s speed 751
 
 #속도가 0이면 말 삭제및 초기화
-execute as @a[scores={job=6,move_tag=1}] run scoreboard players set @s stay 8
+execute as @a[scores={job=6,move_tag=1}] run scoreboard players set @s stay 5
 execute as @a[scores={job=6,move_tag=0,stay=1..}] run scoreboard players remove @s stay 1
 execute as @a[scores={job=6,move_tag=0,stay=1}] run kill @e[type=zombie_horse,tag=lancer_horse,limit=1,sort=nearest]
 execute as @a[scores={job=6,move_tag=0,stay=1}] run scoreboard players set @s speed 0
