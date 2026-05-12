@@ -30,7 +30,7 @@
     ]
   ],
   "rewards": {
-    "function": "yusha:game_win/test"
+    "function": "yusha:timer/doom_clear"
   },
   "sends_telemetry_event": true
 }
