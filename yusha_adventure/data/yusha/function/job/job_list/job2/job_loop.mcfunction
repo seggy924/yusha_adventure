@@ -1,1 +1,0 @@
-function yusha:job/job_list/job2/job_skill/guard

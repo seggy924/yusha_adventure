@@ -39,6 +39,8 @@ scoreboard players set #sys_wait wait_count 0
 scoreboard objectives add select_job trigger
 
 scoreboard objectives add timer dummy
+
+gamerule random_tick_speed 100
 #모두를 무직으로 설정
 #execute as @a run function yusha:job/job_list/job0/job_give
 #용사 깃발 초기화

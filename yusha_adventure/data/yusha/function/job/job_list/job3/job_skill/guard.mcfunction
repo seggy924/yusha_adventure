@@ -1,0 +1,3 @@
+execute if items entity @a[scores={job=3}] weapon.mainhand shield at @a[scores={job=3}] run effect give @a[distance=1..5] resistance 1 255 true
+execute if items entity @a[scores={job=3}] weapon.mainhand shield at @a[scores={job=3}] run effect give @a[distance=1..5] glowing 1 1 true
+execute if items entity @a[scores={job=3}] weapon.mainhand shield at @a[scores={job=3}] run particle minecraft:dust{color:[0.000,0.933,1.000],scale:1} ~ ~0.1 ~ 2.5 0.1 2.5 0.01 10

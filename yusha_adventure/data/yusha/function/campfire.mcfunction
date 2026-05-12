@@ -33,11 +33,11 @@ execute at @e[type=marker,tag=campfire] run tp @e[type=allay,tag=campfire_mob,di
 execute at @e[type=marker,tag=campfire] run scoreboard players remove @a[distance=..5] campfire_timer 1 
 
 # 내구도가 깎인 아이템이 있는 플레이어만 수리 프로세스 진행
-execute at @e[type=marker,tag=campfire] as @a[distance=..10,scores={campfire_timer=0}] run item modify entity @s armor.head yusha:repair 
-execute at @e[type=marker,tag=campfire] as @a[distance=..10,scores={campfire_timer=0}] run item modify entity @s armor.chest yusha:repair 
-execute at @e[type=marker,tag=campfire] as @a[distance=..10,scores={campfire_timer=0}] run item modify entity @s armor.legs yusha:repair 
-execute at @e[type=marker,tag=campfire] as @a[distance=..10,scores={campfire_timer=0}] run item modify entity @s armor.feet yusha:repair
-execute at @e[type=marker,tag=campfire] as @a[distance=..10,scores={campfire_timer=0}] run item modify entity @s weapon.mainhand yusha:repair
+execute at @e[type=marker,tag=campfire] as @a[distance=..3,scores={campfire_timer=0}] run item modify entity @s armor.head yusha:repair 
+execute at @e[type=marker,tag=campfire] as @a[distance=..3,scores={campfire_timer=0}] run item modify entity @s armor.chest yusha:repair 
+execute at @e[type=marker,tag=campfire] as @a[distance=..3,scores={campfire_timer=0}] run item modify entity @s armor.legs yusha:repair 
+execute at @e[type=marker,tag=campfire] as @a[distance=..3,scores={campfire_timer=0}] run item modify entity @s armor.feet yusha:repair
+execute at @e[type=marker,tag=campfire] as @a[distance=..3,scores={campfire_timer=0}] run item modify entity @s weapon.mainhand yusha:repair
 
 # 타이머 초기화 (수리 여부와 상관없이 타이머는 돌아가도록 설정)
 scoreboard players set @a[scores={campfire_timer=..0}] campfire_timer 120
@@ -50,6 +50,5 @@ execute as @e[type=item_display,tag=campfire] at @s unless entity @e[type=marker
 
 # 4. 상시 효과 부여
 #execute at @e[type=marker,tag=campfire] run effect give @a[distance=..10] minecraft:darkness 2 0 true
-execute at @e[type=marker,tag=campfire] run effect give @a[distance=..10] minecraft:regeneration 5 0 true
-execute at @e[type=marker,tag=campfire] run effect give @a[distance=..10] weakness 2 100 true
-execute at @e[type=marker,tag=campfire] run effect clear @a[distance=10..]
+execute at @e[type=marker,tag=campfire] run effect give @a[distance=..3] minecraft:regeneration 5 0 true
+execute at @e[type=marker,tag=campfire] run effect give @a[distance=..3] weakness 2 100 true

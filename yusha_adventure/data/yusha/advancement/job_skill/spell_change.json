@@ -1,9 +1,9 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:mace"
+      "id": "minecraft:flow_banner_pattern"
     },
-    "title": "기도 사용",
+    "title": "기술 변경",
     "description": "",
     "background": "minecraft:block/moss_block",
     "frame": "task",
@@ -12,16 +12,16 @@
     "hidden": true
   },
   "criteria": {
-    "pray": {
+    "spell_change": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "player": {
-          "team": "job3"
+          "team": "job2"
         },
         "item": {
-          "items": "minecraft:mace",
+          "items": "minecraft:dried_kelp",
           "predicates": {
-            "minecraft:custom_data": "{mace:1b}"
+            "minecraft:custom_data": "{spell_changer:1b}"
           }
         }
       }
@@ -29,10 +29,10 @@
   },
   "requirements": [
     [
-      "pray"
+      "spell_change"
     ]
   ],
   "rewards": {
-    "function": "yusha:job/job_list/job3/job_skill/pray"
+    "function": "yusha:job/job_list/job2/job_skill/spell_change"
   }
 }
