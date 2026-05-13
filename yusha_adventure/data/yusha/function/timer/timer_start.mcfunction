@@ -2,7 +2,9 @@
 scoreboard objectives add doom_timer dummy
 scoreboard objectives add doom_math dummy
 scoreboard objectives add oracle dummy
-scoreboard objectives add nether_time dummy "지옥 체류 시간"
+scoreboard objectives add time_tick dummy
+time set 6000
+gamerule advance_time false
 
 # 2. 시작 시간 및 현재 남은 시간 설정 (초 단위: 4시간 = 14400초)
 # 기록 계산을 위해 #start_time을 반드시 설정해야 합니다.
@@ -25,3 +27,4 @@ bossbar set minecraft:doom_timer players @a
 
 # 5. 타이머 루프 함수 최초 실행
 function yusha:timer/timer_loop
+function yusha:world_time

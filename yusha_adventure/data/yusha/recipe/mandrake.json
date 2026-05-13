@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "dried_ghast",
+    "ghast_tear",
+    "crimson_fungus"
+  ],
+  "result": {
+    "id": "minecraft:pitcher_pod",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": "{fortress_tracker:1b}",
+      "minecraft:custom_name": {"bold":true,"color":"#521B04","italic":false,"text":"맨드레이크"},
+      "minecraft:lore": [{"italic":false,"text":"이 뿌리는 고향으로 되돌아 가려는"},{"italic":false,"text":" 습성이 있는것 같다."},{"italic":false,"text":"(요새에 가까워  질수록 조용해 진다)"}]
+    }
+  }
+}

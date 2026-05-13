@@ -1,4 +1,4 @@
-# 1. 거리 측정 (네더에 있을 때만 실행) [cite: 1, 2]
+# 1. 거리 측정 (네더에 있을 때만 실행)
 execute as @a[nbt={Dimension:"minecraft:the_nether"},nbt={SelectedItem:{components:{"minecraft:custom_data":{fortress_tracker:1b}}}}] at @s store result score @s dist run locate structure minecraft:fortress 
 
 # 2. 타이머 감소 (맨드레이크를 들고 있는 모든 플레이어 대상) 

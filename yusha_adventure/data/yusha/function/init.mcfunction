@@ -2,13 +2,14 @@ tellraw @a ["",{"text":"[ ","color":"gray"},{"text":"용사의 모험","color":"
 scoreboard objectives remove generation
 gamerule fall_damage false
 gamerule pvp false
+gamerule fall_damage false
+#gamerule advance_time true
 #function yusha:timer/timer_stop
 schedule clear yusha:game_start/wait_notice
 #모든 도전 과제 초기화
 advancement revoke @a everything
 advancement grant @a only yusha:main/root
 gamerule immediate_respawn true
-gamerule fall_damage false
 kill @e[tag=flag]
 execute at @a run playsound minecraft:entity.player.levelup master @a ~ ~ ~ 1 1
 # 용사 죽음 스코어보드
@@ -39,6 +40,10 @@ scoreboard players set #sys_wait wait_count 0
 scoreboard objectives add select_job trigger
 
 scoreboard objectives add timer dummy
+
+scoreboard objectives add dist dummy
+
+scoreboard objectives add beep_timer dummy
 
 gamerule random_tick_speed 100
 #모두를 무직으로 설정

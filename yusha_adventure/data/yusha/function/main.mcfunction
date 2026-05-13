@@ -20,6 +20,6 @@ execute if entity @a[nbt={Dimension:"minecraft:the_end"}] run execute in minecra
 execute if entity @a[nbt={Dimension:"minecraft:the_end"}] run execute in minecraft:the_end run gamerule fall_damage false
 
 
-execute as @a[nbt={SelectedItem:{components:{"minecraft:custom_data":{fortress_tracker:1b}}}}] at @s run function yusha:timer/fortress_tracker
+execute as @a[nbt={SelectedItem:{components:{"minecraft:custom_data":{fortress_tracker:1b}}}}] at @s run function yusha:fortress_tracker
 
 function yusha:campfire
