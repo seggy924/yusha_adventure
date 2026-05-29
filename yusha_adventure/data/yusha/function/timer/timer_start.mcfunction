@@ -21,10 +21,9 @@ scoreboard players set #3600 oracle 3600
 # 4. 보스바 설정 (최대값을 초 단위인 14400으로 설정)
 bossbar add minecraft:doom_timer "멸망까지 남은 시간"
 bossbar set minecraft:doom_timer max 14400
-bossbar set minecraft:doom_timer style notched_12
+bossbar set minecraft:doom_timer style progress
 bossbar set minecraft:doom_timer color red
 bossbar set minecraft:doom_timer players @a
 
 # 5. 타이머 루프 함수 최초 실행
 function yusha:timer/timer_loop
-function yusha:world_time

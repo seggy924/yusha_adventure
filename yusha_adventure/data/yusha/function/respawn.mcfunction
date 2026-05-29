@@ -16,7 +16,7 @@ scoreboard players remove @s respawn_timer 1
 # 타이머가 0이 되는 순간 부활 처리
 execute if score @s respawn_timer matches 0 run function yusha:job/job_respawn
 execute if score @s respawn_timer matches 0 at @e[type=item_display,limit=1] run tp @s ~ ~ ~
-execute if score @s respawn_timer matches 0 unless entity @e[type=item_display,tag=flag,limit=1] at @a[scores={job=1},limit=1] run tp @s ~ ~ ~
+execute if score @s[scores={job=8}] respawn_timer matches 0 unless entity @e[type=item_display,tag=flag,limit=1] at @a[scores={job=1},limit=1] run tp @s ~ ~ ~
 execute if score @s respawn_timer matches 0 run effect give @s minecraft:resistance 5 255 true
 execute if score @s respawn_timer matches 0 run gamemode survival @s
 execute if score @s respawn_timer matches 0 run title @s actionbar {"text":"부활했습니다!","color":"aqua","bold":true}

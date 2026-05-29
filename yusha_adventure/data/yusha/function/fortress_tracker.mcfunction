@@ -15,13 +15,9 @@ execute as @a[nbt={SelectedItem:{components:{"minecraft:custom_data":{fortress_t
 execute as @a[nbt={Dimension:"minecraft:overworld"},nbt={SelectedItem:{components:{"minecraft:custom_data":{fortress_tracker:1b}}}},scores={beep_timer=..0}] run scoreboard players set @s beep_timer 0
 
 # [네더] 거리 1000까지 10단계 (가까워질수록 조용해짐) 
-execute as @a[nbt={Dimension:"minecraft:the_nether"},scores={dist=..150,beep_timer=..0}] run scoreboard players set @s beep_timer 200
-execute as @a[nbt={Dimension:"minecraft:the_nether"},scores={dist=151..250,beep_timer=..0}] run scoreboard players set @s beep_timer 100
-execute as @a[nbt={Dimension:"minecraft:the_nether"},scores={dist=251..350,beep_timer=..0}] run scoreboard players set @s beep_timer 70
-execute as @a[nbt={Dimension:"minecraft:the_nether"},scores={dist=351..450,beep_timer=..0}] run scoreboard players set @s beep_timer 50
-execute as @a[nbt={Dimension:"minecraft:the_nether"},scores={dist=451..550,beep_timer=..0}] run scoreboard players set @s beep_timer 35
-execute as @a[nbt={Dimension:"minecraft:the_nether"},scores={dist=551..650,beep_timer=..0}] run scoreboard players set @s beep_timer 25
-execute as @a[nbt={Dimension:"minecraft:the_nether"},scores={dist=651..750,beep_timer=..0}] run scoreboard players set @s beep_timer 15
-execute as @a[nbt={Dimension:"minecraft:the_nether"},scores={dist=751..850,beep_timer=..0}] run scoreboard players set @s beep_timer 10
-execute as @a[nbt={Dimension:"minecraft:the_nether"},scores={dist=851..1000,beep_timer=..0}] run scoreboard players set @s beep_timer 6
-execute as @a[nbt={Dimension:"minecraft:the_nether"},scores={dist=1001..,beep_timer=..0}] run scoreboard players set @s beep_timer 3
+execute as @a[nbt={Dimension:"minecraft:the_nether"},scores={dist=..50,beep_timer=..0}] run scoreboard players set @s beep_timer 200
+execute as @a[nbt={Dimension:"minecraft:the_nether"},scores={dist=51..100,beep_timer=..0}] run scoreboard players set @s beep_timer 100
+execute as @a[nbt={Dimension:"minecraft:the_nether"},scores={dist=101..150,beep_timer=..0}] run scoreboard players set @s beep_timer 60
+execute as @a[nbt={Dimension:"minecraft:the_nether"},scores={dist=151..200,beep_timer=..0}] run scoreboard players set @s beep_timer 30
+execute as @a[nbt={Dimension:"minecraft:the_nether"},scores={dist=201..300,beep_timer=..0}] run scoreboard players set @s beep_timer 10
+execute as @a[nbt={Dimension:"minecraft:the_nether"},scores={dist=301..,beep_timer=..0}] run scoreboard players set @s beep_timer 3

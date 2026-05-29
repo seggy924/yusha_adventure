@@ -20,7 +20,7 @@ title @a[team=!job8,scores={job=3..},distance=19.5..22.5] actionbar [{"bold":tru
 title @a[team=!job8,scores={job=3..},distance=22.5..25.5] actionbar [{"bold":true,"color":"red","text":"■"},{"bold":true,"color":"dark_gray","text":"■■■■■■■■■"}]
 title @a[team=!job8,scores={job=3..},distance=25.5..30] actionbar [{"bold":true,"color":"red","text":"■"},{"bold":true,"color":"dark_gray","text":"■■■■■■■■■"}]
 
-execute at @a[scores={job=1}] run tag @a[distance=30..,scores={job=3..},team=!job8] add out_of_range
+execute at @a[scores={job=1},team=!job8] run tag @a[distance=30..,scores={job=3..},team=!job8] add out_of_range
 execute at @a[scores={job=1}] run data merge entity @e[nbt={item:{components:{"minecraft:custom_data":{trident:1b}}}},limit=1,distance=30..] {inGround:1b}
 
 execute at @a[scores={job=1}] run kill @e[distance=30..,tag=lancer_horse,type=zombie_horse]

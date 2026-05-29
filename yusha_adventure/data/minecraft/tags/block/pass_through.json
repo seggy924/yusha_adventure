@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "air",
+    "short_grass",
+    "#fire",
+    "water",
+    "#flowers",
+    "firefly_bush",
+    "bush",
+    "#minecraft:saplings",
+    "red_mushroom",
+    "brown_mushroom",
+    "crimson_fungus",
+    "warped_fungus",
+    "dead_bush",
+    "fern",
+    "short_dry_grass",
+    "tall_dry_grass",
+    "mangrove_propagule",
+    "warped_roots",
+    "crimson_roots",
+    "kelp",
+    "sea_pickle",
+    "seagrass",
+    "tall_seagrass",
+    "tall_grass",
+    "kelp_plant"
+  ]
+}

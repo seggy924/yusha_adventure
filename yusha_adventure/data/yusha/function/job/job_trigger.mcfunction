@@ -1,4 +1,4 @@
-execute as @a[scores={select_job=3}] run execute as @r[scores={job=0}] run function yusha:job/job_list/job3/job_give
+execute as @a[scores={select_job=2}] run execute as @r[scores={job=0}] run function yusha:job/job_list/job3/job_give
 execute as @a[scores={select_job=3}] run execute as @r[scores={job=0}] run function yusha:job/job_list/job3/job_give
 execute as @a[scores={select_job=4}] run execute as @r[scores={job=0}] run function yusha:job/job_list/job4/job_give
 execute as @a[scores={select_job=5}] run execute as @r[scores={job=0}] run function yusha:job/job_list/job5/job_give

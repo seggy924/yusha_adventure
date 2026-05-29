@@ -45,6 +45,8 @@ scoreboard objectives add dist dummy
 
 scoreboard objectives add beep_timer dummy
 
+scoreboard objectives add ward dummy
+
 gamerule random_tick_speed 100
 #모두를 무직으로 설정
 #execute as @a run function yusha:job/job_list/job0/job_give

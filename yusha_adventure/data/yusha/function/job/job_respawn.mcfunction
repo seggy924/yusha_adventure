@@ -1,5 +1,5 @@
 execute if entity @a[scores={job=1}] as @s[scores={job=1}] run function yusha:job/job_list/job1/job_respawn
-execute if entity @a[scores={job=3}] as @s[scores={job=3}] run function yusha:job/job_list/job3/job_respawn
+execute if entity @a[scores={job=2}] as @s[scores={job=2}] run function yusha:job/job_list/job3/job_respawn
 execute if entity @a[scores={job=3}] as @s[scores={job=3}] run function yusha:job/job_list/job3/job_respawn
 execute if entity @a[scores={job=4}] as @s[scores={job=4}] run function yusha:job/job_list/job4/job_respawn
 execute if entity @a[scores={job=5}] as @s[scores={job=5}] run function yusha:job/job_list/job5/job_respawn

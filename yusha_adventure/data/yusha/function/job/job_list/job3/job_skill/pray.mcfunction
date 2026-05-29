@@ -1,14 +1,11 @@
-clear @s *[custom_data~{job:1b}]
-function yusha:job/job_list/job3/job_item/mace
-function yusha:job/job_list/job3/job_item/shield
-execute at @a run particle glow ~ ~ ~ 0.5 1 0.5 1 20
-# [다크소울풍 마법 인챈트 사운드]
-# 2. 신비로운 마법 입자 (일루전너 주문음)
-playsound minecraft:entity.illusioner.prepare_mirror player @a ~ ~ ~ 0.7 1.3
-# 3. 영롱한 금속 공명 (자수정 소리)
-playsound minecraft:block.amethyst_block.chime player @a ~ ~ ~ 1.0 1.3
-# 4. 바람이 감기는 소리 (휘두르기 소리 변조)
-playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 0.6 0.8
-effect give @a regeneration 10 2 true
-effect give @a glowing 1 1 true
+# 1. 시전자에게 도발 마커 태그 부여
+tag @s add taunt_caster
+# 2. 중요: 시전자(@s)를 '제외'한 주변 30블록 내의 모든 플레이어만 관전 모드로 변경
+execute at @s run gamemode spectator @a[distance=..30,tag=!taunt_caster,gamemode=survival]
+
+# 2. 타겟이 완전히 리셋된 주변 몹들에게 0.1 대미지를 주어 시전자에게 어그로 고정
+execute at @s as @e[type=!#not_live,distance=..30] run damage @s 0.1 minecraft:generic by @a[tag=taunt_caster,limit=1]
+
 advancement revoke @s only yusha:job_skill/pray
+# 3. 1틱(0.05초) 뒤에 복구 함수 실행 예약
+schedule function yusha:job/job_list/job3/job_skill/taunt_end 2t
